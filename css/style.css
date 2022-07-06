@@ -115,6 +115,13 @@ i {
     color: #183153;
 }
 
+.menu img {
+    transition: all 1s;
+}
+
+.menu img:hover{
+    transform: scale(1.1,1.1);
+
 @media screen and (min-width: 320px) {
 
     .nav-item {
