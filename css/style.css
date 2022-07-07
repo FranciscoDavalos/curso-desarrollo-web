@@ -121,6 +121,41 @@ i {
 
 .menu img:hover{
     transform: scale(1.1,1.1);
+}
+    
+.body-contacto {
+    background: linear-gradient( rgba(5, 7, 12, 0.75),rgba(5,7,12, 0.75)), url(../photos/bg-body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formulario {
+    height: 620px;
+}
+
+.formulario h2{
+    font-size: 4rem;
+}
+
+.formulario label {
+    font-size: 14px;
+    color: #f6f6f6;
+}
+
+.body-contacto .card {
+    width:50rem;
+    overflow: hidden;
+    background-color: rgba(200, 203, 193, 0.75);
+}
+
+.card div {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 5px;
+}
+
+
 
 @media screen and (min-width: 320px) {
 

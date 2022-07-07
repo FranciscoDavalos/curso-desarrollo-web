@@ -7,6 +7,7 @@
     <title>Marlom</title>
     <link rel="icon" href="../logos/marlom logo negro.jpg">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body class="body-contacto">
     <header>
@@ -21,25 +22,63 @@
         </nav>
     </header>
     <main>
-        <section class="formulario">
-            
-            <div>
-                <form action="" method="get" enctype="multipart/form-data">
-                    <fieldset>
-                        <legend>Datos del Comprador</legend>
-                        <input type="text" name="nombre" placeholder="Nombre">
-                        <input type="text" name="apellido" placeholder="Apellido">
-                        <input type="number" name="celular" placeholder="Telefono">
-                        <input type="text" name="mensaje" placeholder="mensaje">
+        <section class="formulario container d-flex justify-content-center align-items-center">
+            <div class="row">
+                <h2 class="text-white col-md12 mb-9 d-flex justify-content-center mb-5">RESERVA <span class="text-bg-success mx-3"> AHORA </span></h2>
+                <form class="d-flex justify-content-center">
+                   <div class="card">
+                    <div class="row ">
+                        <div class="row">
+                            <div class="col">
+                                <label for="First name">Nombre</label>
+                              <input type="text" class="form-control" aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <label for="Last name">Apellido</label>
+                              <input type="text" class="form-control" aria-label="Last name">
+                            </div>
+                          </div>
+                          <div>
+                            <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </div>
+                            <div class="col">
+                                <label for="dia">Dia</label>
+                                <select class="form-select" name="dia" id="dia">
+                                    <option value="Lunes">Lunes</option>
+                                    <option value="Martes">Martes</option>
+                                    <option value="Miercoles">Miercoles</option>
+                                </select>
+                                <label for="hora">Hora</label>
+                            <select class="form-select" name="hora" id="hora">
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="19:00">19:00</option>
+                                <option value="20:00">20:00</option>
+                                <option value="21:00">21:00</option>
+                                <option value="22:00">22:00</option>
+                            </select>
+                            </div>
+                          <div>
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3" placeholder="Opcional"></textarea>
+                          </div>
+                        </div>
                     </fieldset>
-                    <input type="submit" value="Enviar">
+                    <button type="submit" class="btn btn-primary text-white">Enviar</button>
+                </div>
                 </form>
             </div>
-            
+        </div>
         </section>
     </main>
     <footer>
         Copyright 2022 © Todos los Derechos Reservados - Diseño: Francisco Davalos
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
